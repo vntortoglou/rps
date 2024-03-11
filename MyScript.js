@@ -53,13 +53,4 @@ if(playerSelection !==`rock` && playerSelection !==`paper` && playerSelection !=
   const computerSelection = getComputerChoice();
 
 
-const playGame = () => {
-    for(let i = 0; i < 5; i++) {
-        playRound(playerSelection, computerSelection)
-    }
-}
-
-
-
-  console.log(playGame());
-  
+  console.log(playRound(playerSelection, computerSelection))
