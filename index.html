@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-    <script src="MyScript.js"></script>
+
+    <!-- Body of the Console -->
+    <div class="gameboy"> 
+
+
+        <!-- On/Off texture on the Console-->
+        <div class="top-lines">ON/OFF</div> 
+
+        <!-- The outline of the screen with the lines and the Battery light-->
+        <div class="outline"> 
+
+
+            <!-- The blue and red lines and the "DOT MATRIX TEXT"-->
+            <div class="text-with-lines">
+                <div class="line-container">
+                    <div class="red-line"></div>
+                    <div class="text">DOT MATRIX WITH STEREO SOUND</div>
+                    <div class="blue-line"></div>
+                </div>
+            </div>
+
+
+
+      <!-- The Power/Battery light and text-->
+            <div class="power-indicator">
+                <div class="power-light"></div>
+                <p class="power-label">Battery</p>
+            </div>
+
+
+
+
+            <!-- The screen where the game is displayed-->
+        <div class="screen">
+            <div id="display">
+                <h2>Your Results</h2>
+            </div>
+    
+            <div id="results">
+                <h3>[The Score]</h3>
+                <h4>Player : <div id="pscore">0</div></h4>
+                <h4>Yoshi : <div id="cscore">0</div></h4>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- The buttons of the Console-->
+    <div class="buttons">
+        <div class="button-container">
+            <button id="rock"></button>
+            <p>Rock</p>
+        </div>
+        <div class="button-container">
+            <button id="paper"></button>
+            <p>Paper</p>
+        </div>
+        <div class="button-container">
+            <button id="scissors"></button>
+            <p>Scissors</p>
+
+        </div>
+</div>
+
+    <!-- The brand name of the console, and the texture lines for headset and sound holes of the console-->
+    <div class="brand-text">  NinetiesGAMERS
+    </div>
+
+
+    <div class="sound-holes">\\\\\\</div>
+    <div class="headset">|||</div>
+
+
+
+    <script src="javascript.js"></script>
 
 </body>
+
 </html>
