@@ -1,147 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Body of the Console -->
-    <div class="gameboy"> 
+    <div class="gameboy">
+      <div class="onOff">OFF ' ON</div>
 
-
-        <div class="onOff"> OFF ' ON</div> 
-
-        <!--The Top Lines of the Gameboy-->
-        <div class="topLines">
-
+      <!--The Top Lines of the Gameboy-->
+      <div class="topLines">
         <div class="vLine1"></div>
         <div class="vLine2"></div>
         <div class="sLine"></div>
+      </div>
+      <!-- The outline of the screen with the lines and the Battery light-->
+      <div class="outline">
+        <!-- The blue and red lines and the "DOT MATRIX TEXT"-->
+        <div class="redLine"></div>
+        <div class="blueLine"></div>
+        <div class="text">DOT MATRIX WITH STEREO SOUND</div>
 
-            </div>
-        <!-- The outline of the screen with the lines and the Battery light-->
-        <div class="outline"> 
+        <!-- The Power/Battery light and text-->
+        <div class="power-indicator">
+          <div class="power-light"></div>
+          <p class="power-label">BATTERY</p>
+        </div>
 
-
-            <!-- The blue and red lines and the "DOT MATRIX TEXT"-->
-                    <div class="redLine"></div>
-                    <div class="blueLine"></div>
-                    <div class="text">DOT MATRIX WITH STEREO SOUND</div>
-
-
-
-      <!-- The Power/Battery light and text-->
-            <div class="power-indicator">
-                <div class="power-light"></div>
-                <p class="power-label">BATTERY</p>
-            </div>
-
-
-
-
-            <!-- The screen where the game is displayed-->
+        <!-- The screen where the game is displayed-->
         <div class="screen">
-            <div id="display">
-                <h2>Your Results</h2>
-            </div>
-    
-            <div id="results">
-                <h3>[The Score]</h3>
-                <h4>Player : <div id="pscore">0</div></h4>
-                <h4>Yoshi : <div id="cscore">0</div></h4>
-            </div>
+          <div id="display">
+            <h2>Your Results</h2>
+          </div>
+
+          <div id="results">
+            <h4>
+              Player:
+              <div id="pscore">0</div>
+              Computer:
+              <div id="cscore">0</div>
+            </h4>
+          </div>
         </div>
+      </div>
+
+      <div class="NGB">
+        <div class="Nintendo">Nintendo</div>
+        <div class="game">GAME</div>
+        <div class="boy">BOY</div>
+        <div class="tm">TM</div>
+      </div>
+
+      <!-- The buttons of the Console-->
+      <div class="buttons">
+        <button id="rock"></button>
+        <button id="paper"></button>
+        <button id="scissors"></button>
+      </div>
+
+      <div class="btnText">
+        <p>&#x270A;</p>
+        <p>&#x270B;</p>
+        <p>&#x270C;</p>
+      </div>
+
+      <div class="crossBtn">
+        <div class="gbCross">
+          <button class="up">| |</button>
+          <button class="down">| |</button>
+          <button class="left">| |</button>
+          <button class="right">| |</button>
+          <button class="center"></button>
         </div>
+      </div>
 
+      <div class="startSelect">
+        <button class="btnStart"></button>
+        <button class="btnSelect"></button>
+      </div>
 
+      <div class="ssText">
+        <div class="ssSelect">SELECT</div>
+        <div class="ssStart">START</div>
+      </div>
 
+      <div class="headPhones">( ) PHONES</div>
 
+      <div class="hpRidges">
+        <div class="rBtm1"></div>
+        <div class="rBtm2"></div>
+        <div class="rBtm3"></div>
+      </div>
 
-    
-<div class="NGB">
-    <div class="Nintendo">Nintendo</div>
-    <div class="game">GAME</div>
-    <div class="boy">BOY</div>
-    <div class="tm">TM</div>
-</div>
+      <div class="topRidges">
+        <div class="rTop1"></div>
+        <div class="rTop2"></div>
+        <div class="rTop3"></div>
+      </div>
 
-    <!-- The buttons of the Console-->
-    <div class="buttons">
-            <button id="rock"></button>
-            <button id="paper"></button>
-            <button id="scissors"></button>
-        </div>
+      <div class="btmShadow"></div>
 
+      <div>
+        <div class="glassScreen"></div>
+      </div>
 
-        <div class="btnText">
-    <p class="rText">&#x270A;</p>
-    <p class="pText">&#x270B;</p>
-    <p calss="sText">&#x270C;</p>
-</div>
-
-
-<div class="crossBtn">
-<div class="gbCross">
-<button class="up">| |</button>
-<button class="down">| |</button>
-<button class="left">| |</button>
-<button class="right">| |</button>
-<button class="center"></button>
-</div>
-</div>
-
-<div class="startSelect">
-    <button class="btnStart"></button>
-<button class="btnSelect"></button>
-</div>
-
-
-<div class="ssText">
-<div class="ssSelect">SELECT</div>
-<div class="ssStart">START</div>
-</div>
-
-<div class="headPhones">( ) PHONES</div>
-
-<div class="hpRidges">
-<div class="rBtm1"></div>
-<div class="rBtm2"></div>
-<div class="rBtm3"></div>
-</div>
-
-<div class="topRidges">
-    <div class="rTop1"></div>
-    <div class="rTop2"></div>
-    <div class="rTop3"></div>
+      <div class="soundRidges">
+        <div class="sr1"></div>
+        <div class="sr2"><div class="srhole"></div></div>
+        <div class="sr3"><div class="srhole"></div></div>
+        <div class="sr4"><div class="srhole"></div></div>
+        <div class="sr5"><div class="srhole"></div></div>
+        <div class="sr6"><div class="srhole"></div></div>
+      </div>
     </div>
 
-    <div class="btmShadow"></div>
-
-
-    <div>glass
-    <div class="glassScreen"></div>
-</div>
-
-<div class="soundRidges">
-    <div class="sr1"></div>
-    <div class="sr2"><div class="srhole"></div></div>
-    <div class="sr3"><div class="srhole"></div></div>
-    <div class="sr4"><div class="srhole"></div></div>
-    <div class="sr5"><div class="srhole"></div></div>
-    <div class="sr6"><div class="srhole"></div></div>
-</div>
-
-</div>
-
-
-
     <script src="javascript.js"></script>
-
-</body>
-
+  </body>
 </html>
