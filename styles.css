@@ -1,10 +1,13 @@
 body {
     display: flex;
-    background: url(img/img.jpg) no-repeat center center/ cover;
+    background: linear-gradient(135deg, #2e8b8b, #1b1f2b);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    border: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 
