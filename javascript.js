@@ -14,45 +14,47 @@ let computerWins = 0;
 
 // Round rules
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection === "rock" && computerSelection === "rock") {
-      display.textContent = `It's a draw! Both picked ✊ Rock.`;
-    } else if (playerSelection === "rock" && computerSelection === "paper") {
-      display.textContent = `You lose! ✊ Rock is covered by ✋ Paper.`;
-      computerWins++;
-      cscore.textContent = computerWins;
-    } else if (playerSelection === "rock" && computerSelection === "scissors") {
-      display.textContent = `You win! ✊ Rock crushes ✌️ Scissors.`;
-      playerWins++;
-      pscore.textContent = playerWins;
-    } else if (playerSelection === "paper" && computerSelection === "rock") {
-      display.textContent = `You win! ✋ Paper covers ✊ Rock.`;
-      playerWins++;
-      pscore.textContent = playerWins;
-    } else if (playerSelection === "paper" && computerSelection === "paper") {
-      display.textContent = `It's a draw! Both picked ✋ Paper.`;
-    } else if (playerSelection === "paper" && computerSelection === "scissors") {
-      display.textContent = `You lose! ✋ Paper is cut by ✌️ Scissors.`;
-      computerWins++;
-      cscore.textContent = computerWins;
-    } else if (playerSelection === "scissors" && computerSelection === "rock") {
-      display.textContent = `You lose! ✌️ Scissors are crushed by ✊ Rock.`;
-      computerWins++;
-      cscore.textContent = computerWins;
-    } else if (playerSelection === "scissors" && computerSelection === "paper") {
-      display.textContent = `You win! ✌️ Scissors cut ✋ Paper.`;
-      playerWins++;
-      pscore.textContent = playerWins;
-    } else if (playerSelection === "scissors" && computerSelection === "scissors") {
-      display.textContent = `It's a draw! Both picked ✌️ Scissors.`;
-    }
-  
-    // Check if someone has won
-    if (playerWins === 5) {
-      display.textContent = "🎉 You win the game! 🎉";
-    } else if (computerWins === 5) {
-      display.textContent = "😭 You Lose! 😭";
-    }
-  
+  if (playerSelection === "rock" && computerSelection === "rock") {
+    display.textContent = `It's a draw! Both picked ✊ Rock.`;
+  } else if (playerSelection === "rock" && computerSelection === "paper") {
+    display.textContent = `You lose! ✊ Rock is covered by ✋ Paper.`;
+    computerWins++;
+    cscore.textContent = computerWins;
+  } else if (playerSelection === "rock" && computerSelection === "scissors") {
+    display.textContent = `You win! ✊ Rock crushes ✌️ Scissors.`;
+    playerWins++;
+    pscore.textContent = playerWins;
+  } else if (playerSelection === "paper" && computerSelection === "rock") {
+    display.textContent = `You win! ✋ Paper covers ✊ Rock.`;
+    playerWins++;
+    pscore.textContent = playerWins;
+  } else if (playerSelection === "paper" && computerSelection === "paper") {
+    display.textContent = `It's a draw! Both picked ✋ Paper.`;
+  } else if (playerSelection === "paper" && computerSelection === "scissors") {
+    display.textContent = `You lose! ✋ Paper is cut by ✌️ Scissors.`;
+    computerWins++;
+    cscore.textContent = computerWins;
+  } else if (playerSelection === "scissors" && computerSelection === "rock") {
+    display.textContent = `You lose! ✌️ Scissors are crushed by ✊ Rock.`;
+    computerWins++;
+    cscore.textContent = computerWins;
+  } else if (playerSelection === "scissors" && computerSelection === "paper") {
+    display.textContent = `You win! ✌️ Scissors cut ✋ Paper.`;
+    playerWins++;
+    pscore.textContent = playerWins;
+  } else if (
+    playerSelection === "scissors" &&
+    computerSelection === "scissors"
+  ) {
+    display.textContent = `It's a draw! Both picked ✌️ Scissors.`;
+  }
+
+  // Check if someone has won
+  if (playerWins === 5) {
+    display.textContent = "🎉 You win the game! 🎉";
+  } else if (computerWins === 5) {
+    display.textContent = "😭 You Lose! 😭";
+  }
 
   updateScores();
 }

@@ -76,7 +76,6 @@ body {
   transition: opacity 0.5s ease-in-out;
   font-family: monospace;
 }
-  
 
 .buttons {
   position: relative;
@@ -161,14 +160,12 @@ button {
     rgb(195, 187, 82),
     rgb(165, 167, 62)
   );
-
 }
 
 .gameboy:hover .screen h2,
 .gameboy:hover .screen h3,
 .gameboy:hover .screen h4 {
   color: rgba(0, 0, 0, 0.6);
-
 }
 
 .brand-text {
